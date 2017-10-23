@@ -13,7 +13,10 @@ lazy val root: Project = (project in file(".")).settings(
   scapegoatVersion in ThisBuild := "1.3.3",
   libraryDependencies += scalaTest % Test,
   libraryDependencies ++= Seq(
-    "info.mukel" %% "telegrambot4s" % "3.0.13"
+    "info.mukel"                 %% "telegrambot4s"  % "3.0.13",
+    "com.typesafe"               % "config"          % "1.3.1",
+    "ch.qos.logback"             % "logback-classic" % "1.2.3",
+    "com.typesafe.scala-logging" %% "scala-logging"  % "3.7.2"
   ),
   scalafmtVersion := "1.3.0",
   scalafmtOnCompile in ThisBuild := true,
